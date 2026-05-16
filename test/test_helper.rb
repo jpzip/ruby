@@ -13,7 +13,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 module TestFixtures
   BASE = "https://jpzip.example"
 
-  ENTRY_2310831 = {
+  ENTRY_2310017 = {
     "prefecture" => "神奈川県",
     "prefecture_kana" => "カナガワケン",
     "prefecture_roma" => "Kanagawa",
@@ -23,7 +23,7 @@ module TestFixtures
     "city_roma" => "Yokohama Shi Naka Ku",
     "city_code" => "14104",
     "towns" => [
-      { "town" => "矢口台", "kana" => "ヤグチダイ", "roma" => "Yaguchidai" }
+      { "town" => "本町", "kana" => "ホンチョウ", "roma" => "Honcho" }
     ]
   }.freeze
 

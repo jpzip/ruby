@@ -26,18 +26,18 @@ Ruby 3.2 以上が必要(`Data.define` を使用)。
 ```ruby
 require "jpzip"
 
-entry = Jpzip.lookup("2310831")
+entry = Jpzip.lookup("2310017")
 # entry == nil なら見つからなかった
 # entry.prefecture          #=> "神奈川県"
 # entry.city                #=> "横浜市中区"
-# entry.towns.first.town    #=> "矢口台"
+# entry.towns.first.town    #=> "本町"
 
 dict = Jpzip.lookup_group("23")  # 2 桁は 10 並列 fetch
 all  = Jpzip.lookup_all
 meta = Jpzip.meta
 
-Jpzip.valid_zipcode?("2310831")  #=> true
-Jpzip.valid_zipcode?("231-0831") #=> false
+Jpzip.valid_zipcode?("2310017")  #=> true
+Jpzip.valid_zipcode?("231-0017") #=> false
 ```
 
 ### クライアント API (L2 キャッシュ・複数インスタンス用)
@@ -53,7 +53,7 @@ client = Jpzip::Client.new(
 )
 
 client.preload("all")
-entry = client.lookup("2310831")
+entry = client.lookup("2310017")
 ```
 
 ## Cache インターフェース
