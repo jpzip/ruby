@@ -177,6 +177,16 @@ class TestLookup < Minitest::Test
     assert_requested stub, times: 3
   end
 
+  def test_no_retry_on_4xx
+    # Regression: a non-404 4xx must propagate immediately. If retry logic
+    # ever treated it as transient the request count would jump to 3.
+    stub = stub_request(:get, "#{@base}/p/231.json")
+           .to_return(status: 403, body: "forbidden")
+
+    assert_raises(Jpzip::Http::HttpError) { @client.lookup("2310017") }
+    assert_requested stub, times: 1
+  end
+
   def test_l2_cache_round_trip
     cache = build_memory_l2_cache
     client = Jpzip::Client.new(base_url: @base, cache: cache)
