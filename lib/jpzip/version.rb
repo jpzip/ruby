@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Jpzip
-  VERSION = "0.1.2"
+  VERSION = "0.1.3"
 
   # SpecVersion is the jpzip protocol version this SDK targets.
   SPEC_VERSION = "1.0"
