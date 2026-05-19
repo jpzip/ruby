@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Ruby SDK for the jpzip Japanese postal-code dataset"
   spec.description   = "jpzip は日本の郵便番号を CDN 配信の JSON データから引く Ruby SDK。" \
                        "L1 LRU メモリキャッシュを内蔵し、任意の L2 永続キャッシュを差し込める。"
-  spec.homepage      = "https://github.com/jpzip/ruby"
+  spec.homepage      = "https://jpzip.nadai.dev"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.2"
 
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
     "homepage_uri"      => spec.homepage,
     "source_code_uri"   => "https://github.com/jpzip/ruby",
     "bug_tracker_uri"   => "https://github.com/jpzip/ruby/issues",
-    "documentation_uri" => "https://github.com/jpzip/ruby",
+    "documentation_uri" => "https://jpzip.nadai.dev",
     "rubygems_mfa_required" => "true"
   }
 

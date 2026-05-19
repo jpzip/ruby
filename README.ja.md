@@ -2,6 +2,7 @@
 
 [![Gem Version](https://img.shields.io/gem/v/jpzip.svg)](https://rubygems.org/gems/jpzip)
 [![Gem Downloads](https://img.shields.io/gem/dt/jpzip.svg)](https://rubygems.org/gems/jpzip)
+[![Docs](https://img.shields.io/badge/docs-jpzip.nadai.dev-0066cc.svg)](https://jpzip.nadai.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Publish](https://github.com/jpzip/ruby/actions/workflows/publish.yml/badge.svg)](https://github.com/jpzip/ruby/actions/workflows/publish.yml)
 
